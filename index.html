@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Metaverse Conference Website</title>
     <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/index.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
@@ -14,74 +15,115 @@
 <body>
 
     <body>
+        <!-- ==== Mobile: Main Menu ==== -->
+        <div id="navbar-overlay" class="overlay-background">
+            <a class="closeIcon"><img src="assets/img/close.png" alt="Close icon"></a>
+            <ul class="overlay-content">
+                <li><a class="one" href="about.html">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#sponsor">Sponsors</a></li>
+                <li class="menu-item-border"><a class="item-link" href="#">SL campaign </a></li>
+            </ul>
+        </div>
         <!-- ==== DESKTOP: Social media Header ==== -->
-        <div>
-
+        <div class="social">
+            <div> <i class="fab fa-twitter"></i></div>
+            <div> <i class="fab fa-facebook-f"></i></div>
+            <div>English</div>
+            <div>My Page</div>
+            <div>Logout</div>
         </div>
 
         <!-- ==== Navbar ==== -->
-        <nav class="nav">
-
-            <i class="fas fa-bars"></i>
-        </nav>
+        <header class="nav">
+            <nav class="navbar-humberger">
+                <div class="icon-tab" id="humberger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+             <!-- ==== Desktop: Main Menu ==== -->
+            <ul class="desktp_menu">
+                <li class="desktp_menu_item desktp_menu_logo"><a href="index.html"><img src="assets/img/logo.png"
+                            alt="startup" /></a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#sponsor">Sponser</a></li>
+                <li><a href="#">News</a></li>
+                <li class="item-border"><a href="#" class="item-link">VR Campaign</a></li>
+            </ul>
+        </header>
 
         <!-- ==== Header Section ==== -->
         <header class="header">
 
             <h3>"Hello With All"</h3>
-            <h1 class="header__header1">GLOBAL SUMMIT ABOUT Metaverse 2022</h1>
-            <p class="header__text">
+            <h1 class="header_header1">GLOBAL SUMMIT ABOUT Metaverse 2022</h1>
+            <p class="header_text">
                 In futurism and science fiction, the metaverse is a hypothetical 
                 iteration of the Internet as a single, universal and immersive virtual 
                 world that is facilitated by the use of virtual reality and augmented 
                 reality headsets. In colloquial use, a metaverse is a network of 3D 
                 virtual worlds focused on social connection.
             </p>
-            <h2>2022.10.10 (SAT) ~ 3(MON)</h2>
-            <h4 class="header__time">@ Pearl Continential Hotel Conference Hall</h4>
+            <h2 class="eventime">2022.10.10 (SAT) ~ 3(MON)</h2>
+            <h4 class="header_time">@ Liberty Pearl Continential Hotel Conference Hall</h4>
         </header>
 
         <!-- main progeram -->
-        <main class="main">
-            <div class="main__heading">
+        <main class="main" id="program">
+            <div class="main_heading">
                 <h2>Main Program</h2>
-                <div class="main__line"></div>
+                <div class="main_line"></div>
             </div>
-            <div class="main__List">
-                <div class="main__List__item">
-                    <img class="main__List__item__SubItem" src="assets/img/lecture.png" alt="lecture">
-                    <h4 class="main__List__item__SubItem main__List__item__title"> Lecture</h4>
-                    <p class="main__List__item__SubItem ">
+            <div class="main_List">
+                <div class="main_List_item">
+                    <div class="main_List_item_container">
+                        <img class="main_List_item_SubItem" src="assets/img/lecture.png" alt="lecture">
+                    </div>
+                    <h4 class="main_List_item_SubItem main_List_item_title"> Lecture</h4>
+                    <p class="main_List_item_SubItem ">
                         Listen to all speakers from various regions and learn about trends
                         in new normal business in all the world.
                     </p>
                 </div>
-                <div class="main__List__item">
-                    <img class="main__List__item__SubItem" src="assets/img/exibition.png" alt="CC">
-                    <h4 class="main__List__item__SubItem main__List__item__title"> Exhibition</h4>
-                    <p class="main__List__item__SubItem ">
+                <div class="main_List_item">
+                    <div class="main_List_item_container">
+                        <img class="main_List_item_SubItem" src="assets/img/exibition.png" alt="CC">
+                    </div>
+                    <h4 class="main_List_item_SubItem main_List_item_title"> Exhibition</h4>
+                    <p class="main_List_item_SubItem ">
                         Let's meet the innovators from various fields who share their latest
                         used technologies in new normal business.
                     </p>
                 </div>
-                <div class="main__List__item">
-                    <img class="main__List__item__SubItem" src="assets/img/forum.png" alt="forum">
-                    <h4 class="main__List__item__SubItem main__List__item__title"> Forum</h4>
-                    <p class="main__List__item__SubItem ">
-                        It's the time to share our thoughts and opinions with experts by topic.
+                <div class="main_List_item">
+                    <div class="main_List_item_container">
+                        <img class="main_List_item_SubItem" src="assets/img/forum.png" alt="forum">
+                    </div>
+                    <h4 class="main_List_item_SubItem main_List_item_title"> Forum</h4>
+                    <p class="main_List_item_SubItem ">
+                        It's the time to share our thoughts and opinions with experts and learn about the new
+                        normal business
                     </p>
                 </div>
-                <div class="main__List__item">
-                    <img class="main__List__item__SubItem" src="assets/img/workshop.png" alt="workshop">
-                    <h4 class="main__List__item__SubItem main__List__item__title"> Workshop</h4>
-                    <p class="main__List__item__SubItem ">
+                <div class="main_List_item">
+                    <div class="main_List_item_container">
+                        <img class="main_List_item_SubItem" src="assets/img/workshop.png" alt="workshop">
+    
+                    </div>
+                    <h4 class="main_List_item_SubItem main_List_item_title"> Workshop</h4>
+                    <p class="main_List_item_SubItem ">
                         You can create your own creations by using your hand in open source instead of watching them.
                     </p>
                 </div>
-                <div class="main__List__item">
-                    <img class="main__List__item__SubItem" src="assets/img/ignite.png" alt="ignite">
-                    <h4 class="main__List__item__SubItem main__List__item__title">CC Ignite</h4>
-                    <p class="main__List__item__SubItem ">
+                <div class="main_List_item">
+                    <div class="main_List_item_container">
+                        <img class="main_List_item_SubItem" src="assets/img/ignite.png" alt="ignite">
+                    </div>
+                    <h4 class="main_List_item_SubItem main_List_item_title">CC Ignite</h4>
+                    <p class="main_List_item_SubItem ">
                         Create opportunities to freely network with new normal business from around the world.
                     </p>
                 </div>
@@ -94,20 +136,20 @@
         </main>
         <!-- ==== Featured Speakers ==== -->
         <section class="speakers">
-            <div class="speakers__heading">
+            <div class="speakers_heading">
                 <h2>Main Program</h2>
-                <div class="speakers__line"></div>
+                <div class="speakers_line"></div>
             </div>
-            <div class="speakers__list__item">
-                <div class="speaker__list__item__img">
+            <div class="speakers_list_item">
+                <div class="speaker_list_item_img">
                     <img src="assets/img/Les-Brown.jpg" />
                 </div>
-                <div class="speaker__list__item__content">
+                <div class="speaker_list_item_content">
                     <h3>Les Brown</h3>
-                    <p class="speaker__list__item__content__bio">
+                    <p class="speaker_list_item_content_bio">
                         he is one of Egypt’s most influential community contributing figures
                     </p>
-                    <div class="speakers__bio__line">
+                    <div class="speakers_bio_line">
 
                     </div>
                     <p>
@@ -115,16 +157,16 @@
                     </p>
                 </div>
             </div>
-            <div class="speakers__list__item">
-                <div class="speaker__list__item__img">
+            <div class="speakers_list_item">
+                <div class="speaker_list_item_img">
                     <img src="assets/img/Eric-Thomas.jpg" />
                 </div>
-                <div class="speaker__list__item__content">
+                <div class="speaker_list_item_content">
                     <h3>Eric Thomas</h3>
-                    <p class="speaker__list__item__content__bio">
+                    <p class="speaker_list_item_content_bio">
                         he is an Egyptian business
                     </p>
-                    <div class="speakers__bio__line">
+                    <div class="speakers_bio_line">
 
                     </div>
                     <p>
@@ -132,32 +174,32 @@
                     </p>
                 </div>
             </div>
-            <div class="speakers__list__item">
-                <div class="speaker__list__item__img">
+            <div class="speakers_list_item">
+                <div class="speaker_list_item_img">
                     <img src="assets/img/Tony_Robbins.jpg" />
                 </div>
-                <div class="speaker__list__item__content">
+                <div class="speaker_list_item_content">
                     <h3>Tony Robbins</h3>
-                    <p class="speaker__list__item__content__bio">
+                    <p class="speaker_list_item_content_bio">
                         is an American author, coach, speaker, and philanthropist"
                     </p>
-                    <div class="speakers__bio__line">
+                    <div class="speakers_bio_line">
 
                     </div>
                     <p>
                         He is known for his infomercials, seminars, and self-help books including the books Unlimited Power and Awaken the Giant.
                 </div>
             </div>
-            <div class="speakers__list__item">
-                <div class="speaker__list__item__img">
+            <div class="speakers_list_item">
+                <div class="speaker_list_item_img">
                     <img src="assets/img/Tanzila.jpg" />
                 </div>
-                <div class="speaker__list__item__content">
+                <div class="speaker_list_item_content">
                     <h3>Tanzila Khan</h3>
-                    <p class="speaker__list__item__content__bio">
+                    <p class="speaker_list_item_content_bio">
                         is a Pakistani disability rights activist, author, motivational speaker, and founder of Girly Things PK”
                     </p>
-                    <div class="speakers__bio__line">
+                    <div class="speakers_bio_line">
 
                     </div>
                     <p>
@@ -168,13 +210,31 @@
         </section>
 
         <!-- ==== DESKTOP: Partner Section ==== -->
-        <section class="partner">
-
+        <section class="partner" id="sponsor">
+            <h2>Partner</h2>
+            <div class="main_heading">
+                <div class="main_line"></div>
+            </div>
+            <div class="partner_logos">
+                <span class="partner_logosone">IBM</span>
+                <span class="partner_logostwo">Microsoft</span>
+                <span class="partner_logostwo">Amideast</span>
+                <span class="partner_logosone">S PLus</span>
+                <span class="partner_logosone">USAID</span>
+                <span class="partner_logostwo">Nokia</span>
+            </div>
+    
         </section>
 
         <!-- ==== DESKTOP: Footer ==== -->
-        <footer class="footer">
-
+        <footer>
+            <div class="footer_container">
+                <img src="assets/img/logo.png" alt="startup">
+                <div class="footer_container_content">
+                    <p>@ 2022 startup land</p>
+                    <p>Startup Land is a community for young entrepreneurs </p>
+                </div>
+            </div>
         </footer>
     </body>
 

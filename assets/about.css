@@ -11,13 +11,20 @@ body {
   padding: 0;
 }
 
+#humberger {
+  display: block;
+}
+
 .nav {
   background-color: #f7f7f7;
+  margin-top: -20px;
+  padding-top: 20px;
 }
 
 i {
   font-size: 30px;
-  margin: 20px 0 0 20px;
+  margin: -50px 0 0 20px;
+  cursor: pointer;
 }
 
 .header {
@@ -29,59 +36,65 @@ i {
   text-align: center;
   padding: 20px;
   background-color: #f7f7f7;
+  line-height: 25px;
 }
 
 .header h3 {
   color: #ec5242;
 }
 
-.header__header1 {
+.header_header1 {
   font-family: 'COCOGOOSE', sans-serif;
   padding: 20px 0;
   font-size: 1.9em;
   font-weight: 700;
   color: #ec5242;
+  line-height: 35px;
 }
 
-.header__text {
+.header_text {
   padding: 15px;
   border: 2px solid #f0f0f0;
   background-color: #fff;
   margin: 5px;
 }
 
-.header__Email {
+.header_Email {
   font-weight: bold;
-  font-style: underline;
+  text-decoration: underline;
 }
 
 .main {
   text-align: center;
-  padding: 20px;
   border-bottom: 2px solid #f0f0f0;
+  padding: 10% 7%;
 }
 
-.main__line {
+.main_line {
   width: 8%;
   height: 2px;
   background-color: #ec5242;
   margin: 15px 0;
 }
 
-.main__heading {
+.main_heading {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.main__logo {
+.main p {
+  margin-bottom: 20px;
+}
+
+.main_logo {
   border: 2px solid #f0f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main__logo img {
+.main_logo img {
   width: 30%;
   height: 30%;
 }
@@ -91,11 +104,14 @@ i {
   padding: 30px;
 }
 
-.time__one {
+.time_p {
+  padding: 0 20%;
+}
+
+.time_one {
   color: white;
   background-image: url('img/summit1.jpeg');
   min-height: 195px;
-  background-position: cover;
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
@@ -103,21 +119,25 @@ i {
   box-shadow: inset 0 0 0 2000px rgba(255, 0, 0, 0.438);
 }
 
-.time__text {
+.time_text {
   position: absolute;
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
 }
 
-.time__two {
+.time_text h2 {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: 500;
+}
+
+.time_two {
   margin-top: 50px;
   position: relative;
   color: white;
   background-image: url('img/summit2.jpeg');
   min-height: 195px;
   background-repeat: no-repeat;
-  background-position: cover;
   background-size: 100%;
   box-shadow: inset 0 0 0 2000px rgba(255, 0, 0, 0.438);
 }
@@ -133,39 +153,148 @@ i {
   padding-top: 30px;
 }
 
-.partner__logos {
+.partner_logos {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   font-weight: 600;
   font-size: 20px;
   color: #8d8d8d;
-  margin-top: 10px;
+  padding: 20px 0;
 }
 
-.partner__logos span {
-  padding-bottom: 15px;
+.partner_logos span {
+  padding: 0 7px 15px 7px;
   margin: 10px;
 }
 
-.partner__logos__type1 {
+.partner_logos_type1 {
   font-family: 'Lato', sans-serif;
 }
 
-.partner__logos__type2 {
+.partner_logos_type2 {
   font-family: 'COCOGOOSE', sans-serif;
 }
 
-.footer__container {
+footer {
+  padding: 20px 0;
+}
+
+.footer_container {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
-.footer__container img {
-  width: 20%;
-  height: 15%;
+.footer_container img {
+  width: 12%;
+  height: 12%;
+  padding: 0 5% 0 20%;
 }
 
-.footer__container__content {
+.footer_container_content {
   align-self: center;
+}
+
+.footer-img-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .header {
+    padding: 0 14% 40px 14%;
+  }
+
+  .header h3 {
+    color: #ec5242;
+  }
+
+  .header_header1 {
+    font-family: 'COCOGOOSE', sans-serif;
+    padding: 20px 0;
+    font-size: 1.9em;
+    font-weight: 700;
+    color: #ec5242;
+  }
+
+  .header_text {
+    padding: 25px;
+    margin: 20px;
+    line-height: 23px;
+  }
+
+  .header_Email {
+    text-decoration: underline;
+    padding-top: 10px;
+  }
+
+  .main {
+    padding: 5% 25%;
+  }
+
+  .time_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    padding: 0 11%;
+  }
+
+  .time_one {
+    color: white;
+    background-image: url('img/summit1.jpeg');
+    min-height: 195px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin-top: 0;
+    box-shadow: inset 0 0 0 2000px rgba(255, 0, 0, 0.438);
+  }
+
+  .time_text {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  .time_text h2 {
+    font-family: 'COCOGOOSE', sans-serif;
+    font-weight: 500;
+  }
+
+  .time_two {
+    margin-top: 0;
+    position: relative;
+    color: white;
+    background-image: url('img/summit2.jpeg');
+    min-height: 195px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: inset 0 0 0 2000px rgba(255, 0, 0, 0.438);
+  }
+
+  .time_p {
+    padding: 0 25% 3% 25%;
+  }
+
+  .partner {
+    display: none;
+  }
+
+  footer {
+    background-color: #2e2e2e;
+    color: #fff;
+  }
+
+  .footer-img-mobile {
+    display: none;
+  }
+
+  .footer-img-desktop {
+    display: block;
+  }
 }
