@@ -4,19 +4,13 @@
 
 ## Home Screen (Desktop Version)
 
-![screenshot](assets/img/Homedesktop.png)
 
-## Home Screen (Mobile Version)
-
-![screenshot](assets/img/Homemobile.png)
+<img src="https://github.com/saqibjavaiddev/HTML-CSS-and-JS-Final-Capstone/raw/Final-Capstone-Project/assets/img/Homedesktop.png" width="100%" height="1400">
 
 ## About Screen (Desktop Version)
 
-![screenshot](assets/img/Aboutdesktop.png)
 
-## About Screen (Mobile Version)
-
-![screenshot](assets/img/Aboutmobile.png)
+<img src="https://github.com/saqibjavaiddev/HTML-CSS-and-JS-Final-Capstone/blob/Final-Capstone-Project/assets/img/Aboutdesktop.png" width="100%" height="1000">
 
 
 
