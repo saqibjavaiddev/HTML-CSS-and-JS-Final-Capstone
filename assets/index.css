@@ -82,7 +82,7 @@ h2.eventime{
 }
 
 .main_line {
-  width: 15%;
+  width: 5%;
   height: 2px;
   background-color: #ec5242;
   margin-top: 15px;
@@ -352,7 +352,7 @@ h2.eventime{
   }
 
   .partner h2 {
-    color: #fff;
+    color: grey;
     padding-top: 30px;
   }
 

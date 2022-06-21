@@ -103,6 +103,13 @@ html {
       font-size: 14px;
       margin-bottom: 20px;
     }
+
+    .social i:hover {
+      font-size: 14px;
+      margin-bottom: 20px;
+      transition: transform 1s;
+      transform: rotate(360deg);
+    }
   
     #humberger {
       display: none;
