@@ -37,7 +37,7 @@ body {
   z-index: -1;
 }
 
-.header_header2 {
+.text1 {
   color: #ec5242;
 }
 
@@ -168,8 +168,8 @@ h2.eventime{
 }
 
 .speaker_list_item_img img {
-  width: 100%;
-  height: 100%;
+  width: 130px;
+  height: 150px;
   object-fit: cover;
   object-position: bottom;
   padding-left: 12%;
@@ -197,12 +197,32 @@ h2.eventime{
 }
 
 .speaker-btn {
-  width: 100%;
-  height: 50px;
+  font-weight: 500;
+  margin-top: 50px;
   background-color: #fff;
-  border: 1px solid #d3d3d3;
-  margin-top: 70px;
+  width: 100%;
+  font-size: 20px;
+  cursor: pointer;
   color: #555;
+  border: 1px solid #d3d3d3;
+  padding-bottom: 15px;
+  font-family: 'Lato', sans-serif;
+}
+
+.speaker-btn i {
+  font-size: 28px;
+}
+
+.speaker-btn:hover {
+  font-weight: 500;
+  margin-top: 50px;
+  background-color: #555;
+  width: 100%;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #d3d3d3;
+  padding-bottom: 15px;
 }
 
 .partner {
@@ -238,7 +258,7 @@ h2.eventime{
     padding-top: 5%;
   }
 
-  .header_header2 {
+  .text1 {
     font-size: 2.5em;
   }
 
@@ -345,6 +365,15 @@ h2.eventime{
     color: #8d8d8d;
     margin-top: 10px;
     padding: 20px 0;
+  }
+
+  .speaker_list_item_img img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    object-position: bottom;
+    padding-left: 12%;
+    padding-top: 12%;
   }
 
   .partner_logos span {
