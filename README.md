@@ -19,7 +19,6 @@
 - HTML
 - CSS
 - JS
-- Bootstrap 5
 
 
 ## Live Demo
