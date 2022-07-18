@@ -2,6 +2,8 @@
 
 # Microverse First CAPSTONE HTML,CSS and JS
 
+A metaverse submit 2022 website project to organize metaverse events build using HTML, CSS and JS
+
 ## Home Screen (Desktop Version)
 
 
